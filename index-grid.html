@@ -6,10 +6,12 @@
             div
             {
                 border: 2px solid red;
+                width: 700;
             }
 
             .container div {
                 border: 2px solid green;
+                width: 200px;
                 margin: 20px;
                 text-align: center;
                 
@@ -19,9 +21,16 @@
                 grid-template-columns: 200px 200px 200px;
             }
 
-            @media(max-width:600px) {
+            @media(max-width:720px) {
+                div {
+                    width: 200px;
+                }
                 #grid {
                     display: block;
+                }
+
+                #grid div {
+                    width: 120px;
                 }
             }
 
